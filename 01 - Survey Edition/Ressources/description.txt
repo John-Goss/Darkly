@@ -1,0 +1,5 @@
+Inspecter la page Survey 'http://YOURADDRESSIP/?page=survey#'
+
+Il y a un selecteur de valeur pour les 'grade', si on modifie la valeur d'un grade par une valeur supérieur à 10 et qu'on set ce grade la, tada!
+
+Les valeurs devraient être verifiées et contenus dans un range definis de valeurs.

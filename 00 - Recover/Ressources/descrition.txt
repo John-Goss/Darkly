@@ -1,0 +1,6 @@
+Inspecter la page de recuperation de mdp 'http://YOURADDRESSIP/?page=recover#'
+
+Vous trouverez un champ caché (type="hidden") de type input, ayant pour valeur une adresse mail, ici 'webmaster@borntosec.com'
+On modifie cette adresse en editant l'attribut 'value' ou en supprimant l'attribut 'hidden' afin de modifier directement sur la page web, puis on click sur 'Submit' pour voir apparaitre le flag.
+
+L'adresse mail de recuperation devrait etre stockée coté serveur ou au moins faire un check dessus à la requête.

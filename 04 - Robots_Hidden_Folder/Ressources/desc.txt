@@ -1,0 +1,8 @@
+On regarde si un fichier robots.txt est present, ces fichiers sont presents a la racine de la plus part des sites et servent entre autre au referencement et à bloquer des URL au moteur de recherche
+
+'http://YOURADDRESSIP/robots.txt'
+Il contient deux chemins '/whatever' et '/.hidden' inaccessible pour les robots.
+
+Nous nous rendons sur 'http://YOURADDRESSIP/.hidden'
+On trouve un fichier README et des liens vers des sous dossiers contenant egalement un README et d'autres sous-dossiers.
+On fait donc un script sh qui va recuperer tous les fichiers README recursivement puis on affiche le contenus en filtrant pour avoir le flag.

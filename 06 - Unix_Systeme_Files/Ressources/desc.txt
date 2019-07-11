@@ -1,0 +1,5 @@
+Tous les serveurs sur systeme UNIX contiennent un fichier etc/passwd, il n'est normalement pas accesible comme ça mais on va essayer de le trouver en remontant l'arborescence en ajoutant '../' à l'url demandée.
+
+Au fur et à mesure qu'on remonte le serveur nous prompt des indices.
+
+'http://192.168.1.23/?page=../../../../../../../etc/passwd'

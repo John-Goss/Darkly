@@ -1,0 +1,4 @@
+Lorsque vous allez sur 'http://YOURADDRESSIP/index.php?page=feedback'
+
+Ici ce trouve un formulaire contenant deux champs de type input.
+Si vous tapez 'script' dans la partie 'Name' du formulaire et que vous l'envoyez, tada!

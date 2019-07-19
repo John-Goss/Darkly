@@ -1,0 +1,5 @@
+On essaye un brute force sur la page de 'SIGN IN' avec un petit dictionnaire de mdp frequement utilisé avec le login 'admin'
+On mets donc en place un petit script qui va effectuer la requete de connexion avec le login 'admin' et un par un chacun des mdp du ditcionnaire.
+On fait donc notre curl en filtrant le flag.
+
+'sh userAttack.sh dictionary.txt'

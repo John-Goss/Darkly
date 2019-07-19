@@ -1,0 +1,11 @@
+À partir de l'index du site, si on clique sur le lien 'BornToSec'
+En inspectant le code source on peut voir deux commentaire interessants
+
+<!--
+You must cumming from : "https://www.nsa.gov/" to go to the next step
+-->
+<!--																																																																																																																																																																																																																																																								Let's use this browser : "ft_bornToSec". It will help you a lot.
+-->
+
+On essaye alors d'envoyer une requete avec curl en specifant le referer et le user-agent.
+'curl -X GET -H "Referer: https://www.nsa.gov/" -A "ft_bornToSec" "http://YOURADDRESSIP/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c" | grep flag'

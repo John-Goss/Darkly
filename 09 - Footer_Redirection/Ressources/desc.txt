@@ -1,0 +1,4 @@
+En inspectant les elements de la page principale,
+si vous modifiez la section redirection des liens sociaux du footer en mettant ce que vous voulez apres 'http://YOURADDRESSIP/index.php?page=redirect&site='
+
+La géstion des liens devrait etre faite coté serveur
